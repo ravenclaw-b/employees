@@ -2,28 +2,27 @@
 
 EmployeeArray::EmployeeArray()
 {
-    filledTo = 0;
+
 }
 
 EmployeeArray::~EmployeeArray()
 {
-    for(int i=0; i<filledTo; i++)
-        delete array[i];
+    for(int i = 0; i < employeeVector.size(); i++)
+        delete employeeVector[i];
 }
 
 void EmployeeArray::add(Employee* employee)
 {
-    array[filledTo] = employee;
-    filledTo++;
+    employeeVector.push_back(employee);
 }
 
 Employee* EmployeeArray::search(string fullname)
 {
-    for (int i = 0; i < filledTo; i++)
+    for (int i = 0; i < employeeVector.size(); i++)
     {
-        if ((*array[i]).firstName + string(" ") + (*array[i]).lastName == fullname)
+        if ((*employeeVector[i]).firstName + string(" ") + (*employeeVector[i]).lastName == fullname)
         {
-            return array[i];
+            return employeeVector[i];
         }
     }
 

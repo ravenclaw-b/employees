@@ -2,14 +2,13 @@
 #define EMPLOYEEARRAY_H
 
 #include "employee.h"
+#include <vector>
 
 class EmployeeArray
 {
-    private:
-        int filledTo = 0;
 
     public:
-        Employee* array[100];
+        vector<Employee*> employeeVector;
 
         EmployeeArray();
         ~EmployeeArray();
