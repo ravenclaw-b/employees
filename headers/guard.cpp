@@ -30,16 +30,8 @@ Guard::Guard()
 
 void Guard::Display()
 {
-    cout << "----------------\n" << endl;
-
-    cout << "First Name: " << firstName << endl;
-    cout << "Last Name: " << lastName << endl;
-    cout << "type: " << type << endl;
-    cout << "national ID: " << nationalID << endl;
-    cout << "company ID: " << companyID << endl;
-
+    Employee::Display();
     cout << "gun type: " << gun.type << endl;
     cout << "gun ammo: " << gun.ammo << endl;
-
     cout << "\n--------------\n" << endl;
 }

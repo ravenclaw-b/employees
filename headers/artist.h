@@ -6,9 +6,10 @@
 
 class Artist : public Employee
 {
-    public:
+    private:
         string software;
 
+    public:
         Artist(string ArtistfirstName, string ArtistlastName, int ArtistnationalID, int ArtistcompanyID, string Artistsoftware);
 
         Artist();
