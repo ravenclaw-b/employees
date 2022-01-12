@@ -10,6 +10,7 @@ class Human
         int nationalID;
         string firstName;
         string lastName;
+        void Display();
 };
 
 #endif
